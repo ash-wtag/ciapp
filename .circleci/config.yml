@@ -5,6 +5,7 @@ jobs:
     docker:
       - image: cimg/base:stable
     environment:
+      JAVA_HOME: /usr/libexec/java_home
       JVM_OPTS: -Xmx3200m
     steps:
       - checkout
